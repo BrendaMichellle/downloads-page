@@ -1,0 +1,81 @@
+/*font-family: 'Fjalla One', sans-serif; (400) 
+font-family: 'Gayathri', sans-serif;(100 400 700) */
+
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  /*colors*/
+  --clr-light: #ffd8be; 
+  --clr-dark: #303030; 
+  /*font-size*/
+  --fs-h1: 1.8rem; 
+  --fs-h2: 1.5rem;
+  --fs-body: 1rem; 
+}
+
+body {
+  background-color: var(--clr-light);
+  text-align: center;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em .5em 1em .5em;
+}
+
+a, .social {
+  text-decoration: none;
+  color: #303030;
+  font-family: 'Gayathri', sans-serif;
+  font-size: 1.5rem;
+}
+
+.social {
+  display: inline;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  .container {
+    margin: 2em auto;
+  }
+}
+
+img {
+  display: inline-block;
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.link { 
+  display: block ;
+  color: white;
+  font-size: 1rem;
+  border: 3px solid white;
+  background-color: var(--clr-dark);
+  box-shadow: 2px 2px 2px rgb(230, 230, 230);
+  padding: .5em .2em;
+  margin: .7em;
+  position: relative;
+  left: 22%;
+  max-width: 50%;
+}
+
+.link:hover {
+  color: var(--clr-dark);
+  background-color: transparent;
+}
